@@ -2,6 +2,7 @@
   "name": "coinbase-login-bot",
   "version": "1.0.0",
   "description": "Telegram bot to capture login credentials",
+  "type": "commonjs", // Add this line
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
